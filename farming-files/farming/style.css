@@ -1,0 +1,391 @@
+@font-face {
+  font-family: Kool Beans; 
+  src: url(/farming/fonts/KoolBean.ttf) format("truetype"); 
+}
+
+@font-face {
+  font-family: Roboto; 
+  src: url(/farming/fonts/Roboto.ttf) format("opentype"); 
+}
+
+
+body {
+  overflow-x: hidden;
+}
+button {
+  outline: none;
+}
+.orange {
+  background-color: #FFD100;
+  padding: 20px 0px 0px 0px;
+
+}
+
+.jar {
+  position: absolute;
+  right: -3px;
+  top: -3px;
+}
+
+.menu-row {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+}
+.nav-item {
+  font-family: Kool Beans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 45px;
+  line-height: 52px;
+
+  color: #FFFFFF;
+}
+.nav-item:hover {
+  color: #FF9595;
+  text-decoration: none;
+}
+
+.unlock-button-item {
+  background: #FF5E5E;
+  border: 4px solid #000000;
+  box-sizing: border-box;
+  border-radius: 15px;
+  width: 259px;
+  height: 59px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 0.1em;
+}
+
+.unlock-button-item:hover {
+  background: #FFF;
+}
+
+.upper-title {
+  font-family: Kool Beans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 80px;
+  color: #FFEDED;
+  text-align: center;
+}
+
+.kool-text {
+  font-family: Kool Beans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100px;
+  line-height: 115px;
+  color: #FFFEFE;
+  text-shadow: 15px 7px 2px #FF0000;
+  text-align: center;
+  margin-top: -45px;
+}
+
+.brick-wall {
+  width: 100%;
+  margin-top: -40px;
+  background-image: url(./image/brick-bg-min.png);
+  background-size: cover;
+  padding-bottom: 230px;
+}
+
+
+.fire-kool {
+  text-align: center;
+}
+
+.aid-is-ready {
+  width: 574px;
+  text-align: center;
+}
+.pro-tip {
+  display: flex;
+  align-self: flex-end;
+}
+.tablet-row {
+  margin-top: 80px;
+}
+.tablet-item {
+  max-width: 475px;
+  height: 220px;
+  background-image: url(./image/bg-tablet.png);
+  background-size: cover;
+  padding: 30px;
+}
+
+.aid-balance-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 36px;
+
+  color: #000000;
+}
+
+.amount {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 40px;
+
+  letter-spacing: 0.1em;
+
+  color: #595959;
+}
+.rending-row {
+  padding: 0px 20px;
+}
+.pending {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #000000;
+}
+.pending-aid {
+  text-align: right;
+}
+
+.second-tablet-item {
+  padding: 0px 40px;
+}
+.vipping {
+  margin-top: 20px;
+  position: absolute;
+  right: 10%;
+}
+
+.green {
+  background-color: #8CC63F;
+  padding: 0px;
+}
+
+.frog-menu {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: -150px;
+}
+
+.frog-menu span {
+  font-family: Kool Beans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 120px;
+  line-height: 138px;
+
+  color: #FFFFFF;
+  text-shadow: 8px 8px 2px rgba(0, 0, 0, 0.25);
+  margin-right: 20px;
+}
+.actions-container {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(140, 198, 63, 0.85);
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.deck-row {
+  margin-top: 30px;
+}
+
+.deck-item {
+  max-width: 500px;
+  height: 345px;
+  background-image: url(./image/bg-deck.png);
+  background-size: cover;
+  padding: 30px 10px;
+}
+
+.kool-balance-title {
+  font-family: Kool Beans;
+font-style: normal;
+font-weight:normal;
+font-size: 43px;
+line-height: 48px;
+letter-spacing: 0.1em;
+
+color: #FFF2E3;
+}
+
+.kool-balance-subtitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #FFFFFF;
+}
+
+.select {
+  width: 100%;
+  background: #FFF2E3;
+  border-radius: 5px;
+  height: 50px;
+  margin-top: -15px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.1em;
+
+  color: #6D6200;
+}
+div.select {
+  margin-top: 5px;
+  height: 30px;
+  font-size: 22px;
+  line-height: 28px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+.footer {
+  margin-top: 200px;
+}
+
+.footer-nav ul {
+  list-style: none;
+
+}
+.footer-nav li {
+  font-family: Kool Beans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 57px;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+.footer-nav li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.footer-nav li a:hover {
+  color: #FF9595;
+}
+
+.footer-img {
+  position: absolute;
+  bottom: 0px;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+.connect-wallet {
+  visibility: hidden;
+  position: fixed;
+  z-index: 10;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 213, 213, 0.5);
+}
+
+.wallet-pop-up {
+  max-width: 800px;
+  background: rgba(255, 213, 213, 0.94);
+  border: 4px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 9px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 35px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.wallet-card {
+  background: rgba(255, 242, 242, 0.94);
+  border: 4px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 9px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 35px;
+}
+
+.wallet-img {
+  text-align: center;
+}
+
+.wallet-text {
+  margin-top: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 30px;
+
+  color: #000000;
+}
+
+.wallet-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #000000;
+}
+.connect-wallet-button {
+  background: rgba(255, 158, 158, 0.94);
+  border: 4px solid #000000;
+  box-sizing: border-box;
+  border-radius: 35px;
+  width: 100%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 38px;
+
+  color: #000000;
+}
+.cancel-button {
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+  background: #FFF1F1;
+  border: 4px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 9px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 35px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 38px;
+
+  color: #494949;
+}
