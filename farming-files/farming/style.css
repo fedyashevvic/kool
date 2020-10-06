@@ -1,12 +1,13 @@
 @font-face {
   font-family: Kool Beans; 
-  src: url(/farming/fonts/KoolBean.ttf) format("truetype"); 
+  src: url(/fonts/KoolBean.ttf) format("truetype"); 
 }
 
 @font-face {
   font-family: Roboto; 
-  src: url(/farming/fonts/Roboto.ttf) format("truetype"); 
+  src: url(/fonts/Roboto.ttf) format("truetype"); 
 }
+
 
 .container {
   max-width: 1250px;
@@ -408,6 +409,10 @@ div.select {
   }
   .unlock-button-item, .fire-kool {
     margin: 30px 0px;
+    font-size: 25px;
+  }
+  .nav-item {
+    margin: 0px 5px;
   }
   .unlock-button {
     text-align: center;
