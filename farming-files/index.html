@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="/farming-files/farming/image/kool-katz-min.png">
+  <link rel="icon" type="image/png" href="https://kool.lol/farming/farming/image/kool-katz-min.png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="farming/style.css">
   <meta property="og:image" content="/image/snip.jpg">
@@ -42,7 +42,7 @@
               <a href="#about" class="nav-item">about</a>
             </li>
             <li>
-              <a href="#menu" class="nav-item">menu</a>
+              <a href="#menulink" class="nav-item">menu</a>
             </li>
             <li>
               <a href="https://kool.lol/" class="nav-item">original</a>
@@ -106,7 +106,7 @@
             <div class="tablet-item">
               <div class="row">
                 <div class="col-md-12 second-tablet-item">
-                  <p class="aid-balance-title">Your $AID balance</p>
+                  <p class="aid-balance-title">Total $AID supply</p>
                   <p class="amount" id="aid-supply">Locked</p>
                 </div>
               </div>
@@ -129,7 +129,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 frog-menu">
-          <span>MENU</span><img src="./farming/image/frog-min.png" alt="frog" width="265px" id="menu">
+          <span>MENU</span><img src="./farming/image/frog-min.png" alt="frog" width="265px" id="menulink">
         </div>
       </div>
     </div>
@@ -185,7 +185,7 @@
               <div class="col-md-1"></div>
               <div class="col-md-1"></div>
               <div class="col-md-10">
-                <div class="select"><span>APY</span> <span>333.4 %</span></div>
+                <div class="select"><span>APY</span> <span>%</span></div>
               </div>
               <div class="col-md-1"></div>
             </div>
@@ -200,11 +200,11 @@
         <div class="row">
           <div class="col-md-4 footer-nav">
             <ul>
-              <li><a href="https://etherscan.io/address/0x9d695e811beb55c98b1b3668295e390d33de5930">Chef contract</a></li>
-              <li><a href="https://info.uniswap.org/pair/0xda15087ec9a8460e2e52504d0757a154a158b913">Uniswap</a></li>
+              <li><a href="https://etherscan.io/token/0x11d6ccabc5130f8b473cef14b462325b3a8b1785">Token address</a></li>
+              <li><a href="https://info.uniswap.org/pair/0xda15087ec9a8460e2e52504d0757a154a158b913">KOOL Uniswap</a></li>
             </ul>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 img-container">
             <img src="./farming/image/footer-image-min.png" alt="footer-img" width="320px" class="footer-img">
           </div>
           <div class="col-md-4 footer-nav">
@@ -214,7 +214,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 img-container">
           <img src="./farming/image/footer-image-min.png" alt="footer-img" width="320px" class="mobile-show">
         </div>
       </footer>
@@ -242,7 +242,7 @@
                   <p>Metamask</p>
                 </div>
               </div>
-              <button class="connect-wallet-button">Connect</button>
+              <button class="connect-wallet-button">Soon</button>
             </div>
           </div>
           <div class="col-md-6">
@@ -257,13 +257,48 @@
                   <p>WalletConnect</p>
                 </div>
               </div>
-              <button class="connect-wallet-button">Connect</button>
+              <button class="connect-wallet-button">Soon</button>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12">
             <button class="cancel-button">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="connect-wallet" id="confirmation-window">
+    <div class="wallet-pop-up">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 wallet-title">
+            Select a wallet provider.
+          </div>
+          <div class="col-md-12 wallet-balance-subtitle">
+            <span id="kool-balance">123</span> KOOL tokens available
+          </div>
+        </div>
+        <div class="row row-input-container">
+          <div class="col-md-12 input-container">
+            <div class="row">
+              <div class="col-md-6 input-box">
+                <input type="text" class="token-amount" placeholder="Enter amount">
+              </div>
+              <div class="col-md-6 ticker-container">
+                <span>KOOL</span> <a class="max-button">MAX</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <button class="cancel-button">Cancel</button>
+          </div>
+          <div class="col-md-6">
+            <button class="cancel-button">Confirm</button>
           </div>
         </div>
       </div>

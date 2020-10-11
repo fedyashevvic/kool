@@ -220,6 +220,11 @@ button {
   background: url(./image/bg-deck.png);
   background-size: cover;
   padding: 30px 10px;
+  margin: 0 auto;
+}
+.img-container {
+    display: flex;
+    justify-content: center;
 }
 
 .kool-balance-title {
@@ -397,6 +402,80 @@ div.select {
   color: #494949;
 }
 
+.wallet-balance-subtitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 31px;
+  text-align: right;
+  color: #BC9E9E;
+}
+.token-amount {
+  border: none;
+  background: none;
+  outline: none;
+  max-width: 90%;
+  display: flex;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 31px;
+  text-align: right;
+  color: #4A4A4A;
+}
+.ticker-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 30px;
+}
+.ticker-container span, .ticker-container a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 30px;
+
+  color: #000000;
+}
+
+.ticker-container a {
+  background: rgba(255, 242, 242, 0.94);
+border: 2px solid #000000;
+box-sizing: border-box;
+box-shadow: 0px 9px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+padding: 8px;
+margin-left: 5px;
+text-decoration: none;
+}
+.ticker-container a:hover {
+  text-decoration: none;
+  background: rgba(255, 143, 143, 0.94);
+  cursor: pointer;
+}
+.input-container {
+  width: 100%;
+  background: rgba(255, 242, 242, 0.94);
+  border: 3px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 9px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 5px 0px;
+}
+.input-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#confirmation-window .cancel-button {
+  border-radius: 20px;
+}
+.row-input-container {
+  padding: 0px 15px;
+}
 
 
 
@@ -471,6 +550,12 @@ div.select {
   .select {
     font-size: 20px;
     line-height: 26px;
+  }
+  .amount {
+    line-height: 20px;   
+  }
+  .pending {
+      margin-left: -5px;
   }
 
 }
