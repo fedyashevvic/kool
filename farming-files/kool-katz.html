@@ -119,6 +119,12 @@
                 <div class="col-md-12">
                   <button class="select">APPROVE $KOOL </button>
                 </div>
+                <div class="col-md-10">
+                  <button class="select" id="withdraw-kool">WITHDRAW</button>
+                </div>
+                <div class="col-md-2">
+                  <button class="select" id="approve-kool">+</button>
+                </div>
               </div>
             </div>
           </div>
@@ -254,22 +260,109 @@
     </div>
   </div>
 
+  <div class="connect-wallet" id="confirmation-window">
+    <div class="wallet-pop-up">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 wallet-title">
+            Deposit KOOL tokens
+          </div>
+          <div class="col-md-12 wallet-balance-subtitle">
+            <span id="kool-balance">123</span> KOOL tokens available
+          </div>
+        </div>
+        <div class="row row-input-container">
+          <div class="col-md-12 input-container">
+            <div class="row">
+              <div class="col-md-6 input-box">
+                <input type="text" class="token-amount" placeholder="Enter amount">
+              </div>
+              <div class="col-md-6 ticker-container">
+                <span>KOOL</span> <a class="max-button">MAX</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <button class="cancel-button">Cancel</button>
+          </div>
+          <div class="col-md-6">
+            <button class="cancel-button pending-button">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="connect-wallet" id="withdraw-confirmation-window">
+    <div class="wallet-pop-up">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 wallet-title">
+            Withdraw KOOL tokens.
+          </div>
+          <div class="col-md-12 wallet-balance-subtitle">
+            <span id="kool-balance">123</span> KOOL tokens available
+          </div>
+        </div>
+        <div class="row row-input-container">
+          <div class="col-md-12 input-container">
+            <div class="row">
+              <div class="col-md-6 input-box">
+                <input type="text" class="token-amount" placeholder="Enter amount">
+              </div>
+              <div class="col-md-6 ticker-container">
+                <span>KOOL</span> <a class="max-button">MAX</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <button class="cancel-button">Cancel</button>
+          </div>
+          <div class="col-md-6">
+            <button class="cancel-button">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 
 
   <script>
     const connctWalletPopUp = document.querySelector("#my-wallet");
     const unlockButtons = document.querySelector('.unlock-button-item');
-    const closeButton = connctWalletPopUp.querySelector('.cancel-button');
+    const closeButton = document.querySelectorAll('.cancel-button');
+    const approveWalletPopUp = document.querySelector("#confirmation-window");
+    const approveButtons = document.querySelector('#approve-kool');
+    const withWalletPopUp = document.querySelector("#withdraw-confirmation-window");
+    const withButtons = document.querySelector('#withdraw-kool');
+
 
     const openConncetWalletPopUp = () => {
       connctWalletPopUp.classList.add('visible');
     };
     const closeConncetWalletPopUp = () => {
       connctWalletPopUp.classList.remove('visible');
+      approveWalletPopUp.classList.remove('visible');
+      withWalletPopUp.classList.remove('visible');
+
+    };
+    const openApproveWalletPopUp = () => {
+      approveWalletPopUp.classList.add('visible');
+    };
+    const openWithWalletPopUp = () => {
+      withWalletPopUp.classList.add('visible');
     };
 
     unlockButtons.addEventListener('click', openConncetWalletPopUp);
-    closeButton.addEventListener('click', closeConncetWalletPopUp);
+    closeButton.forEach(x => x.addEventListener('click', closeConncetWalletPopUp));
+    approveButtons.addEventListener('click', openApproveWalletPopUp);
+    withButtons.addEventListener('click', openWithWalletPopUp);
 
   </script>
 </body>

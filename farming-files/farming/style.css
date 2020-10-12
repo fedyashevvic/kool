@@ -435,7 +435,7 @@ div.select {
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
-  font-size: 22px;
+  font-size: 19px;
   line-height: 30px;
 
   color: #000000;
@@ -477,7 +477,14 @@ text-decoration: none;
   padding: 0px 15px;
 }
 
+.pending-button {
+  color: #818181;
+  background: rgba(231, 231, 231, 0.94);
+}
 
+.success-button {
+  color: #0B8E00;
+}
 
 @media screen and (max-width: 768px) {
   .mobile-show {
@@ -556,6 +563,9 @@ text-decoration: none;
   }
   .pending {
       margin-left: -5px;
+  }
+  .wallet-pop-up {
+    padding: 15px;
   }
 
 }
