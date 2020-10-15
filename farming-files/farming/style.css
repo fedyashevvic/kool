@@ -263,6 +263,9 @@ color: #FFF2E3;
 
   color: #6D6200;
 }
+.select-small {
+  font-size: 22px;
+}
 div.select {
   margin-top: 5px;
   height: 30px;
